@@ -6,7 +6,7 @@ feature 'Creating notes' do
     click_link 'Create Note'
     fill_in 'Title', with: 'title'
     fill_in 'Note', with: 'note'
-    click_button 'Update Note'
+    click_button 'Create Note'
     expect(page).to have_content('title')
     expect(page).to have_content('note')
   end
